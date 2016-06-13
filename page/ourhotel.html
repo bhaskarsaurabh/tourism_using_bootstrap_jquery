@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4th one</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/a.js"></script>
+	<script type="text/javascript" src="../js/b.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/resources/demos/style.css">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#tabs').tabs();
+			$("#accordion1").accordion();
+			$("#accordion2").accordion(); 
+			$("#accordion3").accordion();
+		});
+	</script>
+
+	<script>
+		$(function() {
+			$( "#dialog" ).dialog({
+				autoOpen: false,
+				show: {
+					effect: "blind",
+					duration: 1000
+				},
+				hide: {
+					effect: "explode",
+					duration: 1000
+				}
+			});
+
+			$( "#opener" ).click(function() {
+				$( "#dialog" ).dialog( "open" );
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<!-- ######################### Navigation bar Code ############################### -->
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar navbar-header">
+				<a href="../index.html"><img src="../images/logo.jpg" width="150px" height="55px"></a> 
+			</div>
+			<div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html">Home</a></li>
+					<li id="dialog" title="Develop By">
+                      <p>Name:Baskar Saurabh</p>
+                      <p>Email id: bhaskar008@gmail.com</p>
+                      <p>Phone no. : +918050300485</p>
+                    </li>
+					<li id="opener"><a href="#">Contacts</a></li>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					</button>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	
+	<!-- ######################### Tab Code########################## -->
+	
+	<div id="tabArea">
+		<div id="tabHeader">
+			<a class="tab selectTabHeader" id="tab1">India</a>
+			<a class="tab" id="tab2">China</a>
+			<a class="tab" id="tab3">Dubai</a>
+		</div>
+		<div id="tabData">
+			<div id="tab-data" class="tab1 selectedTab">
+				<div id="accordion1">
+					<h3>Places in India</h3>
+					<div class="placesx">
+						<div class="placesx-data">
+							<img src="../images/pi1.jpg">
+							<p>Agra, a city in northern India’s Uttar Pradesh state, is home to the iconic Taj Mahal.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pi2.jpg">
+							<p>Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pi3.jpg">
+							<p>Kolkata (formerly Calcutta) is the capital of India's West Bengal state.It’s also home to Mother House. </p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pi4.jpg">
+							<p>Mysore (or Mysuru), a city in India's Karnataka state, was the capital of the Kingdom of Mysore from 1399-1947.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pi5.jpg">
+							<p>Goa is a state in western India with coastlines stretching along the Arabian Sea.Goa is also known for its beaches.</p>
+						</div>
+					</div>
+					<h3>Hotels</h3>
+					<div class="hotelx">
+						<div class="hotelx-data" data-price='299'>
+							<h4>The Oberoi Amarvilas (Agra) </h4>
+							<p>$<span class="price1">299</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hi1.jpg">
+						</div>
+						<div class="hotelx-data" data-price='499'>
+							<h4>Hycinth By Sparsa (Trivandrum) </h4>
+							<p>$<span class="price1">499</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hi2.jpg">
+						</div>
+						<div class="hotelx-data" data-price='699'>
+							<h4>The Oberoi Grand (Kolkata)</h4>
+							<p>$<span class="price1">699</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hi3.jpg">
+						</div>
+						<div class="hotelx-data" data-price='899'>
+							<h4>Radisson blu plaza (Mysore)</h4>
+							<p>$<span class="price1">899</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hi4.jpg">
+						</div>
+						<div class="hotelx-data" data-price='999'>
+							<h4>Marriott Resort & Spa (Goa)</h4>
+							<p>$<span class="price1">999</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hi5.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tab-data" class="tab2">
+				<div id="accordion2">
+					<h3>Places in China</h3>
+					<div class="placesx">
+						<div class="placesx-data">
+							<img src="../images/pc1.jpg">
+							<p>The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built northern borders of China to protect the Chinese states and empires.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pc2.jpg">
+							<p>The Li River (Chinese:pinyin: Lí jiāng) is a river in Guangxi Zhuang Autonomous Region, China. It flows 83 kilometres (52 mi) from Guilin to Yangshuo, where the karst mountains and river sights highlight the famous Li River cruise.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pc3.jpg">
+							<p>The Forbidden City was the Chinese imperial palace from the Ming dynasty to the end of the Qing dynasty—the years 1420 to 1912. It is located in the centre of Beijing, China, and now houses the Palace Museum. </p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pc4.jpg">
+							<p>The temple complex was constructed from 1406 to 1420 during the reign of the Yongle Emperor, who was also responsible for the construction of the Forbidden City in Beijing.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pc5.jpg">
+							<p>Huangshan (Chinese: 黄山),[2] is a mountain range in southern Anhui province in eastern China. Vegetation on the range is thickest below 1,100 meters (3,600 ft), with trees growing up to the treeline at 1,800 meters (5,900 ft).</p>
+						</div>
+					</div>
+					<h3>Hotels</h3>
+					<div class="hotelx">
+						<div class="hotelx-data" data-price='299'>
+							<h4>Brickyard Retreat (Great Wall) </h4>
+							<p>$<span class="price1">299</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hc1.jpg">
+						</div>
+						<div class="hotelx-data" data-price='499'>
+							<h4>Brickyard Retreat (Yangshuo) </h4>
+							<p>$<span class="price1">499</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hc2.jpg">
+						</div>
+						<div class="hotelx-data" data-price='699'>
+							<h4>Hotel Kapok heaven (Beijing)</h4>
+							<p>$<span class="price1">699</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hc3.jpg">
+						</div>
+						<div class="hotelx-data" data-price='899'>
+							<h4>XiZhao Temple Hotel (Beijing)</h4>
+							<p>$<span class="price1">899</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hc4.jpg">
+						</div>
+						<div class="hotelx-data" data-price='999'>
+							<h4>Huangshan Xihai (Huangshan)</h4>
+							<p>$<span class="price1">999</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hc5.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tab-data" class="tab3">
+				<div id="accordion3">
+					<h3>Places in Dubai</h3>
+					<div class="placesx">
+						<div class="placesx-data">
+							<img src="../images/pd1.jpg">
+							<p>Dubai is a city in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pd2.jpg">
+							<p>Set on an island in a striking sail-shaped building, this luxury hotel is a 5-minute walk from Wild Wadi Water Park and 4 km from Mall of the Emirates.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pd3.jpg">
+							<p>Ski Dubai is an indoor ski resort with 22,500 square meters of indoor ski area. It is a part of the Mall of the Emirates, one of the largest shopping malls in the world, located in Dubai, United Arab Emirates. </p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pd4.jpg">
+							<p>The Dubai Mall is a shopping mall in Dubai and the largest mall in the world by total area. Along with West Edmonton Mall in Canada, it's the eighteenth largest shopping mall in the world by gross leasable area.</p>
+						</div>
+						<div class="placesx-data">
+							<img src="../images/pd5.jpg">
+							<p>Palm Islands are two artificial islands, Palm Jumeirah and Palm Jebel Ali, on the coast of Dubai, United Arab Emirates. As of November 2014, only Palm Jumeirah has been completed.</p>
+						</div>
+					</div>
+					<h3>Hotels</h3>
+					<div class="hotelx">
+						<div class="hotelx-data" data-price='299'>
+							<h4>Armani Hotel Dubai (Burj Khalifa Area) </h4>
+							<p>$<span class="price1">299</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hd1.jpg">
+						</div>
+						<div class="hotelx-data" data-price='499'>
+							<h4>Beit Al Bahar (Jumeirah Road) </h4>
+							<p>$<span class="price1">499</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hd2.jpg">
+						</div>
+						<div class="hotelx-data" data-price='699'>
+							<h4>Kempinski Hotel (Sheikh Zayed Road)</h4>
+							<p>$<span class="price1">699</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hd3.jpg">
+						</div>
+						<div class="hotelx-data" data-price='899'>
+							<h4>The Address Dubai (Sheikh Mohammed)</h4>
+							<p>$<span class="price1">899</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hd4.jpg">
+						</div>
+						<div class="hotelx-data" data-price='999'>
+							<h4>Jumeirah Zabeel (Crescent Road)</h4>
+							<p>$<span class="price1">999</span> for <span class="night1">1</span> night</p>
+							<input type="text" name="" placeholder="Enter nights">
+							<button>Book Now</button>
+							<a href="#">See photo</a>
+							<img src="../images/hd5.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="col-md-8 footer1">
+			<h4>Tourism</h4>
+			<p>Tourism is travel for pleasure; also the theory and practice of touring, the business of attracting, accommodating, and entertaining tourists, and the business of operating tours. Tourism may be international, or within the traveler's country. The World Tourism Organization defines tourism more generally, in terms which go "beyond the common perception of tourism as being limited to holiday activity only.</p>
+		</div>
+		<div class="col-md-4 footerlogo">
+			<img class="img-circle" src="../images/footerlogo.jpg">
+		</div>
+	</footer>
+</body>
+</html>
+
